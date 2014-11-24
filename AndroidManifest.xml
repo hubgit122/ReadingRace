@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ustc.ssqstone.readingrace"
+    android:versionCode="1"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	
+    <application
+        android:allowBackup="true"
+        android:persistent="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:launchMode="singleTask"
+            android:name="ustc.ssqstone.readingrace.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="ustc.ssqstone.readingrace.UpdateReadingProgress"
+            android:description="@string/now_progress" 
+            android:priority = "1000">
+            <intent-filter
+                android:priority = "1000">
+                <action android:name="ustc.ssqstone.readingrace.UpdateReadingProgress" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">ReadingRace</string>
+    <string name="action_settings">Settings</string>
+    <string name="begin">开始!</string>
+    <string name="stop">停止!</string>
+    <string name="current_page">当前页码</string>
+    <string name="end_page">结束页码</string>
+    <string name="hint_current_page">自动增加</string>
+    <string name="hint_end_page">小于当前页码则无效</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="time_step">时间步长</string>
+    <string name="default_minute">0</string>
+    <string name="default_second">30</string>
+    <string name="now_progress">当前进度</string>
+    <string name="title_activity_main_activity_">MainActivity_</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lock_count">关屏幕时计数</string>
+    
+</resources>
